@@ -6,6 +6,9 @@
 
 body {
     font-family: "source sans pro", "open sans", Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -31,6 +34,9 @@ li {
 .burger-menu {
     float: right;
 }
+
+
+
 
 footer {
     height: 160px;
