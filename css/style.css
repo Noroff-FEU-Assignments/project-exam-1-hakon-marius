@@ -2,47 +2,116 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --background_color: black;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 120px;
+    font-weight: bold;
+    padding: 0 65px;
+    margin-right: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    font-family: "source sans pro", "open sans", Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 nav {
-    background-color: black;
-    color: white;
-    height: 100px;
+    background-color: var(--background_color);
+    height: 90px;
+    width: 100%;
+    display: flex;
 }
 
-a {
+nav ul {
+    margin-right: auto;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    margin: 50px 0;
+    line-height: 30px;
+    list-style: none;
+}
+
+nav ul li a {
     color: white;
+    padding: 5px 8px;
+    font-size: 22px;
     text-decoration: none;
 }
 
-li {
-    float: right;
-    list-style: none;
+#menu-checkbox:checked~ul {
+    left: 0;
+}
+
+.menu-checkbox {
+    font-size: 28px;
+    color: white;
+    position: absolute;
+    line-height: 125px;
+    right: 35px;
+    cursor: pointer;
+    display: none;
 }
 
 #menu-checkbox {
     display: none;
 }
 
-.burger-menu {
-    float: right;
+a.active,
+a:hover {
+    outline-color: red;
+    outline-style: dotted;
+    border-radius: 5px;
+    transition: 0.4s;
 }
 
-
-
+main {
+    background-color: aqua;
+}
 
 footer {
     height: 160px;
-    background-color: black;
+    background-color: var(--background_color);
     text-align: center;
     padding-top: 20px;
     color: white;
     margin-top: auto;
+    z-index: 1000;
+}
+
+@media (max-width: 700px) {
+
+    .menu-checkbox {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: var(--background_color);
+        top: 75px;
+        left: +100%;
+        text-align: center;
+        transition: 0.4s;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
 }
