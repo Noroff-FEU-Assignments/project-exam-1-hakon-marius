@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eboe Contact</title>
+    <link rel="shortcut icon" type="text/css" href="#">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/94f62694c8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
+
         <nav>
             <input type="checkbox" id="menu-checkbox">
             <label for="menu-checkbox" class="menu-checkbox"><i class="fa-solid fa-bars burger-menu"></i></label>
@@ -25,28 +27,35 @@
         </nav>
     </header>
     <div class="background">
-        <h1>Contact</h1>
-        <div class="page-content">
 
-            <form action="send-form.php" method="post" class="contact-form">
+        <div class="page-content">
+            <h1 class="contact-header">Contact</h1>
+            <form id="contactForm" class="contact-form">
                 <fieldset>
                     <legend>Contact info</legend>
-                    <label for="name" class="form-block">Your name</label>
-                    <input type="text" name="name" id="name" placeholder="Your name">
-                    <label for="email" class="form-block">Your Email</label>
+                    <label for="fullName" class="form-block">Your name<span class="Errormessage" id="fullNameError"> 5
+                            char required</span></label>
+
+                    <input type="text" name="fullName" id="fullName" placeholder="Your name">
+
+
+                    <label for="email" class="form-block">Your Email<span class="Errormessage" id="emailError"> type
+                            valid email</span></label>
                     <input type="text" name="email" id="email" placeholder="email">
-                    <label for="subject" class="form-block">Subject</label>
+
+
+                    <label for="subject" class="form-block">Subject<span class="Errormessage" id="subjectError"> 15 char
+                            min</span>
+                    </label>
+
                     <input type="text" name="subject" id="subject" placeholder="subject">
-                    <label for="message" class="form-block">Message</label>
+
+
+                    <label for="message" class="form-block">Message<span class="Errormessage" id="messageError"> 40 char
+                            min</span></label>
                     <textarea id="message" name="message" placeholder="Type message here"></textarea>
                     <div class="button"><button>Submit</button></div>
-
                 </fieldset>
-
-
-
-
-
             </form>
         </div>
     </div>
@@ -54,6 +63,7 @@
     <footer>
         <h2>&copy; Eboe graffiti chronicles</h2>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

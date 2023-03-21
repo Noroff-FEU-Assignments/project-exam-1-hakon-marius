@@ -30,6 +30,7 @@ nav {
     height: 90px;
     width: 100%;
     display: flex;
+    position: fixed;
 }
 
 nav ul {
@@ -91,6 +92,7 @@ footer {
     color: white;
     margin-top: auto;
     z-index: 1000;
+
 }
 
 @media (max-width: 700px) {
@@ -120,39 +122,35 @@ footer {
 /*contactpage*/
 
 .background {
-    height: 100vh;
-    width: 100%;
     background-image: linear-gradient(45deg, rgb(112, 185, 209), white);
-    display: grid;
-    text-align: center;
     display: flex;
+    flex-direction: row;
+    height: 100vh;
 }
 
 .page-content {
-    height: 100vh;
-    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin: auto;
 }
 
-.page-content h1 {
-    text-align: center;
+.contact-header {
+    color: black;
+    font-size: 25px;
+
 }
+
 
 .contact-form {
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: rgb(45, 92, 194);
     width: 350px;
     height: fit-content;
     padding: 35px 25px 100px 25px;
-    text-decoration-style: none;
-    -moz-text-decoration-style: none;
+    margin-bottom: 40px;
     text-align: left;
     border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+
     color: white;
 }
 
@@ -203,4 +201,20 @@ form button {
 
 .form-block {
     display: block;
+}
+
+
+.Errormessage {
+    margin-left: 5px;
+    background-color: rgb(45, 92, 194);
+    color: rgb(45, 92, 194);
+    padding: 3px;
+    border-radius: 2px;
+}
+
+
+@media (max-width: 400px) {
+    .contact-form {
+        width: 100%;
+    }
 }
