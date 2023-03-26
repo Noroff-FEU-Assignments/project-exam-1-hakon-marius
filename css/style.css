@@ -1,7 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,17 +19,25 @@
 }
 
 body {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 nav {
     background-color: var(--background_color);
-    height: 90px;
+    height: 100px;
     width: 100%;
     display: flex;
-    position: fixed;
+    /*position: fixed;*/
 }
 
 nav ul {
@@ -80,9 +87,6 @@ a:hover {
     transition: 0.4s;
 }
 
-main {
-    background-color: aqua;
-}
 
 footer {
     height: 160px;
@@ -92,13 +96,16 @@ footer {
     color: white;
     margin-top: auto;
     z-index: 1000;
-
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (max-width: 700px) {
 
     .menu-checkbox {
         display: block;
+
     }
 
     ul {
@@ -114,6 +121,7 @@ footer {
 
     nav ul li {
         display: block;
+
     }
 
 }
@@ -122,10 +130,10 @@ footer {
 /*contactpage*/
 
 .background {
-    background-image: linear-gradient(45deg, rgb(112, 185, 209), white);
+
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    background-image: linear-gradient(45deg, rgb(112, 185, 209), white);
 }
 
 .page-content {
@@ -142,7 +150,7 @@ footer {
 
 
 .contact-form {
-    margin-top: 100px;
+    margin-top: 40px;
     background-color: rgb(45, 92, 194);
     width: 350px;
     height: fit-content;
@@ -216,5 +224,67 @@ form button {
 @media (max-width: 400px) {
     .contact-form {
         width: 100%;
+    }
+}
+
+/*blog*/
+
+/*
+
+.blogContainer {
+    height: fit-content;
+}
+
+
+/*
+.post h2 {
+    background-color: brown;
+    width: 90%;
+    margin: auto;
+}*/
+
+
+
+
+img {
+    max-width: 640px;
+    max-height: 400px;
+    /*height: 400px;
+    */
+    width: fit-content;
+    text-align: center;
+    margin-left: -40px;
+    border-radius: 8px;
+
+}
+
+
+
+
+.pageStyling {
+    padding: 50px;
+    align-content: center;
+}
+
+.singlepost {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(236, 228, 220);
+    margin-bottom: 20px;
+
+}
+
+.singlepost:last-child {
+    margin-bottom: 155px;
+}
+
+.singlepost p {
+    max-width: 600px;
+}
+
+@media (max-width: 800px) {
+    img {
+        margin: auto;
     }
 }
