@@ -79,8 +79,9 @@ nav ul li a {
     display: none;
 }
 
-a.active,
-a:hover {
+
+li>a.active,
+li>a:hover {
     outline-color: red;
     outline-style: dotted;
     border-radius: 5px;
@@ -109,6 +110,7 @@ footer {
     }
 
     ul {
+
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -117,6 +119,7 @@ footer {
         left: +100%;
         text-align: center;
         transition: 0.4s;
+
     }
 
     nav ul li {
@@ -249,13 +252,12 @@ form button {
 img {
     max-width: 640px;
     max-height: 400px;
-    /*height: 400px;
-    */
     width: fit-content;
     text-align: center;
-    margin-left: -40px;
     border-radius: 8px;
-
+    -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+    -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+    box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
 }
 
 
@@ -277,14 +279,73 @@ img {
 
 .singlepost:last-child {
     margin-bottom: 155px;
+
+}
+
+.postTitle,
+.wp-block-post-date {
+
+    margin-left: 40px;
 }
 
 .singlepost p {
     max-width: 600px;
+    position: relative;
+    margin-left: 40px;
+    line-height: 1.4;
 }
+
+
+.View_more_Posts .singlepost:last-child {
+    width: 40px;
+    height: 20px;
+    background-color: aqua;
+    color: black;
+    position: relative;
+}
+
+
+.singlepost p:not(:first-of-type) {
+    display: none;
+}
+
+.linkToFullPost {
+    background-color: blue;
+    color: white;
+    height: 15px;
+    width: fit-content;
+    padding: 8px;
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+}
+
+
 
 @media (max-width: 800px) {
     img {
-        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .singlepost {
+        padding: 5px;
+
+    }
+
+    .singlepost p {
+        width: 80%;
+    }
+
+    .pageStyling {
+        padding: 0;
+    }
+
+    .linkToFullPost {
+        margin-right: 8%;
     }
 }
