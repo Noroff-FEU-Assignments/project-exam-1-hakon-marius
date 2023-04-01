@@ -5,7 +5,7 @@ const blogContainer = document.querySelector("#blogContainer");
 
 async function getBlogData() {
 
-    let url = 'https://eboe.no/eboe/wp-json/wp/v2/posts/?per_page=10';
+    let url = 'https://eboe.no/eboe/wp-json/wp/v2/posts/';
 
     try {
 
@@ -13,13 +13,16 @@ async function getBlogData() {
         const posts = await response.json();
 
 
-        console.log(posts)
+        console.log("posts", posts)
         posts.forEach(post => {
 
             postTitle = post.title.rendered;
             postContent = post.content.rendered;
-            blogContainer.innerHTML += `<div class="singlepost" id="${post.id}"><div><h2 class="postTitle">${postTitle}</h2>${postContent}<a href="#"class="linkToFullPost">Read more
-            </a></div></div>`
+
+            console.log(post.id)
+
+            blogContainer.innerHTML +=
+                `<a href="blog_specific.html?id=${post.id}" class="singlepost"><div><h2 class="postTitle">${postTitle}</h2>${postContent}<h2 class="read-more">Read More</h2></div></a>`;
         });
 
 
