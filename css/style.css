@@ -11,7 +11,7 @@
 .logo {
     color: white;
     font-size: 35px;
-    line-height: 120px;
+    line-height: 150px;
     font-weight: bold;
     padding: 0 65px;
     margin-right: 50px;
@@ -60,7 +60,7 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    padding: 5px 8px;
+    padding: 0px 5px;
     font-size: 22px;
     text-decoration: none;
 }
@@ -73,7 +73,7 @@ nav ul li a {
     font-size: 28px;
     color: white;
     position: absolute;
-    line-height: 125px;
+    line-height: 150px;
     right: 35px;
     cursor: pointer;
     display: none;
@@ -92,6 +92,20 @@ li>a:hover {
     transition: 0.4s;
 }
 
+.homePageTopSpot h1 {
+    position: relative;
+    right: 100px;
+}
+
+.homePageTopSpot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    height: fit-content;
+    margin: auto;
+}
 
 footer {
 
@@ -114,6 +128,10 @@ time {
     .menu-checkbox {
         display: block;
         margin-bottom: 20px;
+    }
+
+    .homePageTopSpot h1 {
+        position: static;
     }
 
     ul {
@@ -236,24 +254,6 @@ form button {
         width: 100%;
     }
 }
-
-/*blog*/
-
-/*
-
-.blogContainer {
-    height: fit-content;
-}
-
-
-/*
-.post h2 {
-    background-color: brown;
-    width: 90%;
-    margin: auto;
-}*/
-
-
 
 
 img {
@@ -393,4 +393,41 @@ img {
     outline-style: double;
     width: fit-content;
     align-items: end;
+}
+
+
+/*modal*/
+
+
+#modal {
+    /*display: none;*/
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(1, 0, 2, 0.4);
+}
+
+
+.modalImage {
+    margin: auto;
+    display: block;
+    width: 80%;
+    opacity: 1 !important;
+    max-width: 1200px;
+}
+
+.close {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    color: rgb(249, 5, 5);
+    background-color: white;
+    border-radius: 50%;
+    font-size: 45px;
+    transition: 0.3s;
 }
