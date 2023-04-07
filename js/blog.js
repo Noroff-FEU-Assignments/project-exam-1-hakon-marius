@@ -1,10 +1,6 @@
-
 const blogContainer = document.querySelector("#blogContainer");
 
-
-
 async function getBlogData() {
-
     let url = 'https://eboe.no/eboe/wp-json/wp/v2/posts/';
 
     try {
@@ -12,32 +8,24 @@ async function getBlogData() {
         const response = await fetch(url);
         const posts = await response.json();
 
-
-        console.log("posts", posts)
         posts.forEach(post => {
 
-            postTitle = post.title.rendered;
+            postTitle = post.slug;
             postContent = post.content.rendered;
-
-            console.log(post.id)
+            featuredImg = post.better_featured_image.media_details
+            time = post.modified
 
             blogContainer.innerHTML +=
-                `<a href="blog_specific.html?id=${post.id}" class="singlepost"><div><h2 class="postTitle">${postTitle}</h2>${postContent}<h2 class="read-more">Read More</h2></div></a>`;
+                `<a href="blog_specific.html?id=${post.id}" class="singlepost"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
+                alt="${post.better_featured_image.alt_text}"><p>Updated ${time}</p>${post.excerpt.rendered}</p><div>
+                <h2 class="read-more">Read article</h2></div></a>`;
         });
-
-
-
     } catch (error) {
         blogContainer.innerHTML = error;
     }
-
 }
 
 getBlogData()
-
-
-
-//adds css class and removes class when checkbox is changed/checked. Stops body overflowing content on scroll on small screen
 
 const menuCheckbox = document.querySelector("#menu-checkbox");
 const body = document.querySelector("body");

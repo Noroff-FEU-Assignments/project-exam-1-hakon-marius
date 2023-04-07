@@ -1,6 +1,4 @@
 * {
-
-
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -135,7 +133,6 @@ time {
     }
 
     ul {
-
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -144,16 +141,12 @@ time {
         left: +100%;
         text-align: center;
         transition: 0.4s;
-
     }
 
     nav ul li {
         display: block;
-
     }
-
 }
-
 
 /*contactpage*/
 
@@ -162,6 +155,7 @@ time {
     display: flex;
     flex-direction: row;
     background-image: linear-gradient(45deg, rgb(112, 185, 209), white);
+    background-image: cover;
 }
 
 .page-content {
@@ -173,9 +167,7 @@ time {
 .contact-header {
     color: black;
     font-size: 25px;
-
 }
-
 
 .contact-form {
     margin-top: 40px;
@@ -187,7 +179,6 @@ time {
     text-align: left;
     border-radius: 4px;
     color: white;
-
 }
 
 .contact-form input,
@@ -234,11 +225,9 @@ form button {
     min-height: 70px;
 }
 
-
 .form-block {
     display: block;
 }
-
 
 .Errormessage {
     margin-left: 5px;
@@ -248,12 +237,7 @@ form button {
     border-radius: 2px;
 }
 
-
 @media (max-width: 400px) {
-
-
-
-
 
     img {
         max-width: 640px;
@@ -266,9 +250,6 @@ form button {
         box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
     }
 
-
-
-
     .pageStyling {
         padding: 50px;
         align-content: center;
@@ -280,17 +261,14 @@ form button {
         justify-content: center;
         margin-bottom: 20px;
         background-image: linear-gradient(to left, #dcfef8, #ceece6);
-
     }
 
     .singlepost:last-child {
         margin-bottom: 155px;
-
     }
 
     .postTitle,
     .wp-block-post-date {
-
         margin-left: 40px;
     }
 
@@ -301,7 +279,6 @@ form button {
         line-height: 1.4;
     }
 
-
     .View_more_Posts .singlepost:last-child {
         width: 40px;
         height: 20px;
@@ -309,7 +286,6 @@ form button {
         color: black;
         position: relative;
     }
-
 
     .singlepost p:not(:first-of-type) {
         display: none;
@@ -329,7 +305,6 @@ form button {
         text-align: center;
         justify-content: center;
     }
-
 }
 
 @media (max-width: 800px) {
@@ -429,4 +404,25 @@ form button {
     border-radius: 50%;
     font-size: 45px;
     transition: 0.3s;
+}
+
+.detailsContainer figure img {
+    max-width: 600px;
+    height: fit-content;
+}
+
+/*blogpage*/
+
+#blogContainer {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#blogContainer img {
+    max-width: 600px;
+}
+
+.blogPageHeader {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
