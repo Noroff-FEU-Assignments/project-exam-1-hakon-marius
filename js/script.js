@@ -29,7 +29,7 @@ function validateForm(event) {
 
 
     //email
-    if (checkLength(email.value, 6) === true) {
+    if (validateEmail(email.value) === true) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "inline-block";
@@ -89,3 +89,13 @@ function validateEmail(email) {
     return patternMatches;
 };
 
+const menuCheckbox = document.querySelector("#menu-checkbox");
+const body = document.querySelector("body");
+
+menuCheckbox.addEventListener("change", function () {
+    if (menuCheckbox.checked) {
+        body.classList.add("burgerMenu");
+    } else {
+        body.classList.remove("burgerMenu");
+    }
+});

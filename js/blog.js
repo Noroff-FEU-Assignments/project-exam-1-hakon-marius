@@ -1,34 +1,16 @@
 const blogContainer = document.querySelector("#blogContainer");
-const button = document.querySelector(".View_more_Posts");
 
-/*
-let url = 'https://eboe.no/eboe/wp-json/wp/v2/posts?per_page=10';
+async function getBlogData(numberOfPosts) {
 
-const buttons = document.querySelectorAll(".View_more_Posts");
-
-buttons.forEach(button => {
-    button.addEventListener("click", function () {
-        console.log("green")
-
-        if (url == 'https://eboe.no/eboe/wp-json/wp/v2/posts/')
-
-
-            getBlogData(url);
-
-    });
-
-});*/
-
-
-async function getBlogData(newUrl) {
-
-    let url = 'https://eboe.no/eboe/wp-json/wp/v2/posts?per_page=10';
+    let url = `https://eboe.no/eboe/wp-json/wp/v2/posts?per_page=${numberOfPosts}`;
 
 
     try {
 
         const response = await fetch(url);
         const posts = await response.json();
+
+        blogContainer.innerHTML = "";
 
         posts.forEach(post => {
 
@@ -42,15 +24,33 @@ async function getBlogData(newUrl) {
                 alt="${post.better_featured_image.alt_text}"><p>Updated ${time}</p>${post.excerpt.rendered}</p><div>
                 <h2 class="read-more">Read article</h2></div>
                 `
-
         });
+
+
+        blogContainer.innerHTML += `<button onclick="getBlogData(20)"class="View_more_Posts" id="View_more_Posts">View More Posts</button>`;
+
+
+        //removes the button if there is more than 10 posts
+        const button = document.querySelector(".View_more_Posts");
+        if (numberOfPosts === 10) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+
     } catch (error) {
         blogContainer.innerHTML = error;
     }
+}
+function fetchPosts(numberOfPosts) {
+    getBlogData(numberOfPosts);
 
 }
+getBlogData(10)
 
-getBlogData()
+
+
+
 
 const menuCheckbox = document.querySelector("#menu-checkbox");
 const body = document.querySelector("body");
