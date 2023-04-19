@@ -16,6 +16,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1,
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 
 
 body {
@@ -115,7 +119,8 @@ li>a:hover {
     justify-content: flex-start;
     max-width: 100%;
     height: fit-content;
-    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 footer {
@@ -124,7 +129,7 @@ footer {
     padding-top: 20px;
     color: white;
     margin-top: auto;
-    z-index: 1000;
+    z-index: 50;
     bottom: 0;
     width: 100%;
 }
@@ -153,6 +158,7 @@ time {
         left: +100%;
         text-align: center;
         transition: 0.4s;
+        z-index: 99;
     }
 
     nav ul li {
@@ -450,13 +456,16 @@ footer h2 {
 
 
 /*index slider*/
+.sliderContainer-styling {
+    margin-bottom: 40px;
+}
 
 .slider-container {
     display: flex;
     flex-direction: row;
     position: relative;
     overflow-x: hidden;
-    height: 226px;
+    height: 270px;
 }
 
 .slider-container img {
@@ -480,7 +489,12 @@ footer h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(214, 237, 229);
+    background-color: #f5f5f4;
+    height: 270px;
+}
+
+.item:hover {
+    box-shadow: 0px 5px 10px rgba(0.2, 0, 0, 0.3);
 }
 
 .btn {
@@ -499,7 +513,24 @@ footer h2 {
     align-self: center;
 }
 
+.btn:hover {
+    background-color: black;
+}
+
+
 .btn-right {
     position: absolute;
     right: 0;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-square-facebook,
+.fa-instagram {
+    margin: 25px;
+    font-size: 30px;
+    color: whitesmoke;
 }
