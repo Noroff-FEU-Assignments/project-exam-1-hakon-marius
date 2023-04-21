@@ -26,7 +26,7 @@ async function latesBlogs() {
             time = post.modified
             sliderContainer.innerHTML += `<div class="item">
            
-            <a href="blog_specific.html?id=${post.id}"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
+            <a href="blog_specific.html?id=${post.id}"><h2>${post.title.rendered}</h2><img src="${post.better_featured_image.source_url}" 
             alt="${post.better_featured_image.alt_text}"></a>  
         </div>`
         });

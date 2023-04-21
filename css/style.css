@@ -2,6 +2,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 :root {
     --background_color: black;
 }
@@ -117,10 +119,11 @@ li>a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    max-width: 100%;
+    max-width: 70%;
     height: fit-content;
-    margin-bottom: 50px;
-    margin-top: 30px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 footer {
@@ -164,6 +167,10 @@ time {
     nav ul li {
         display: block;
 
+    }
+
+    .homePageTopSpot {
+        max-width: 100%;
     }
 }
 
@@ -405,10 +412,17 @@ img {
     justify-content: center;
     align-self: center;
     margin: 0 auto;
-    height: 65%;
-    width: 65%;
+    height: 80%;
+    width: 80%;
 
 }
+
+@media (max-width: 800px) {
+    .modal-content img {
+        width: 95%;
+    }
+}
+
 
 .detailsContainer figure img {
     max-width: 600px;
