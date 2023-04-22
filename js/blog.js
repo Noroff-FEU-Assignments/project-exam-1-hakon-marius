@@ -14,20 +14,29 @@ async function getBlogData(numberOfPosts) {
 
         posts.forEach(post => {
 
-            postTitle = post.slug;
+            postTitle = post.title.rendered;
             postContent = post.content.rendered;
             featuredImg = post.better_featured_image.media_details
-            time = post.modified
+            time = post.date
 
             blogContainer.innerHTML +=
-                `<a href="blog_specific.html?id=${post.id}" class="singlepost"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
-                alt="${post.better_featured_image.alt_text}"><p>Updated ${time}</p>${post.excerpt.rendered}</p><div>
-                <h2 class="read-more">Read article</h2></div>
-                `
+                /*
+               
+                               `<a href="blog_specific.html?id=${post.id}" class="singlepost"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
+                                           alt="${post.better_featured_image.alt_text}"><p>Updated ${time}</p>${post.excerpt.rendered}</p><div>
+                                           <h2 class="read-more">Read article</h2></div>
+                                           `
+                */
+
+                `<div class="singlepost"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
+                            alt="${post.better_featured_image.alt_text}"></p>${post.excerpt.rendered}</p><div class="read-more-button-container">
+                            <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-more">Read article</h2><a/></div>
+                            `
+
         });
 
 
-        blogContainer.innerHTML += `<button onclick="getBlogData(20)"class="View_more_Posts" id="View_more_Posts">View More Posts</button>`;
+        blogContainer.innerHTML += `<div class="read-more-button-container"><button onclick="getBlogData(20)"class="View_more_Posts" id="View_more_Posts">View More Posts</button></div>`;
 
 
         //removes the button if there is more than 10 posts

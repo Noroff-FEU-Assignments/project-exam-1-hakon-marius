@@ -83,7 +83,7 @@ function myFunction(modalImage) {
         modalContent.remove();
     });
 }
-/*
+
 
 const menuCheckbox = document.querySelector("#menu-checkbox");
 const body = document.querySelector("body");
@@ -94,4 +94,3 @@ menuCheckbox.addEventListener("change", function () {
         body.classList.remove("burgerMenu");
     }
 });
-*/
