@@ -72,3 +72,11 @@ menuCheckbox.addEventListener("change", function () {
     }
 });
 
+//Loader
+window.addEventListener("load", function () {
+    const loading = document.querySelector(".loading");
+    loading.classList.add("hide-loader");
+    loading.addEventListener("transitioned", function () {
+        document.body.removechild(loading);
+    })
+});

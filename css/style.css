@@ -32,6 +32,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #fcfeff;
 }
 
 body.burgerMenu {
@@ -115,6 +116,8 @@ li>a:hover {
 .homePageTopSpot p {
     text-align: center;
     margin: 25px 5px 35px 5px;
+    background-color: rgb(246, 245, 245);
+    padding: 10px;
 
 }
 
@@ -132,6 +135,10 @@ li>a:hover {
 
 .homePageTopSpot h1 {
     margin-bottom: 35px;
+}
+
+.homePageFrontImage {
+    box-shadow: 9px 8px 5px 3px rgba(95, 93, 93, 0.775);
 }
 
 footer {
@@ -443,8 +450,8 @@ img {
     justify-content: center;
     align-self: center;
     margin: 0 auto;
-    height: 80%;
-    width: 80%;
+    height: 75%;
+    width: 75%;
 
 }
 
@@ -588,8 +595,14 @@ footer h2 {
 .fa-square-facebook,
 .fa-instagram {
     margin: 25px;
-    font-size: 30px;
+    font-size: 33px;
     color: whitesmoke;
+
+}
+
+.fa-square-facebook:hover,
+.fa-instagram:hover {
+    color: red;
 }
 
 /*about page*/
@@ -638,4 +651,57 @@ div.about_img {
         margin: auto;
     }
 
+}
+
+
+/* loader*/
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(68, 74, 72);
+    transition: opacity 0.80s, visibility 0.80s;
+}
+
+.hide-loader {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loading p {
+    color: rgb(17, 30, 165);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 96%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border: 5px solid rgb(42, 85, 212);
+    border-radius: 50%;
+    border-top-color: rgb(82, 96, 168);
+    animation: loading 09s ease infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
