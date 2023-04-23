@@ -42,6 +42,9 @@ async function fetchBlog() {
         detailsContainer.innerHTML = `<h1>${heading.firstChild.data}</h1>
         </div class="ice">${img.outerHTML}</div><p>${updated.outerText}</p>${elementsHtml}<span id="modal"></span></div>`
 
+        //gives the page a unique title
+        document.title = `Article | Eboe ${heading.firstChild.data}`;
+
     } catch
 
     (error) {
@@ -50,8 +53,6 @@ async function fetchBlog() {
     }
 
 
-
-    //torsdag 13.04
     //modal onclick
     const modalImage = detailsContainer.querySelectorAll("img");
 
@@ -94,6 +95,7 @@ menuCheckbox.addEventListener("change", function () {
         body.classList.remove("burgerMenu");
     }
 });
+
 
 
 //Loader
