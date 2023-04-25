@@ -19,19 +19,33 @@ async function getBlogData(numberOfPosts) {
             featuredImg = post.better_featured_image.media_details
             time = post.date
 
+
+
+
+            /*
+                        const parser = new DOMParser();
+                        const doc = parser.parseFromString(post.content.rendered, "text/html");
+                        const img = doc.querySelector(".wp-block-image");
+        
+
+
+
             blogContainer.innerHTML +=
                 /*
-               
-                               `<a href="blog_specific.html?id=${post.id}" class="singlepost"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
-                                           alt="${post.better_featured_image.alt_text}"><p>Updated ${time}</p>${post.excerpt.rendered}</p><div>
-                                           <h2 class="read-more">Read article</h2></div>
-                                           `
+                                `<div class="singlepost"><h2>${postTitle}</h2><img src="${img.outerHTML}</p>${post.excerpt.rendered}</p><div class="read-more-button-container">
+                                                        <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-more">Read article</h2><a/></div></div>
+                                                        `
                 */
 
+
+            blogContainer.innerHTML +=
+
+
                 `<div class="singlepost"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
-                            alt="${post.better_featured_image.alt_text}"></p>${post.excerpt.rendered}</p><div class="read-more-button-container">
-                            <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-more">Read article</h2><a/></div>
-                            `
+            alt="${post.better_featured_image.alt_text}"></p>${post.excerpt.rendered}</p><div class="read-more-button-container">
+            <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-more">Read article</h2><a/></div>
+            `
+
 
         });
 

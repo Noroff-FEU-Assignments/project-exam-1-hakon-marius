@@ -18,6 +18,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.logo:hover {
+    color: red;
+}
+
 h1,
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif
@@ -408,7 +412,15 @@ img {
     margin-left: 40px;
     max-width: 625px;
     padding-right: 33px;
+    margin-bottom: -20px
 }
+
+
+.detailsContainer img {
+    margin-bottom: -50px;
+}
+
+
 
 .detailsContainer p:last-child {
     margin-bottom: 20px;
@@ -610,9 +622,9 @@ footer h2 {
 .container_about_page {
     display: flex;
     flex-direction: row;
-    padding: 40px;
+    padding: 80px 40px 160px 40px;
     margin: 0 auto;
-    height: 100vh;
+    height: 60vh;
 }
 
 
@@ -639,6 +651,18 @@ div.about_img {
     height: 40px;
     background-color: rgb(108, 59, 193);
     margin-bottom: 10px;
+}
+
+.about_page_footer {
+    margin-top: auto;
+}
+
+@media (max-width: 400px) {
+    .container_about_page img {
+        border-radius: 0%;
+        width: 100%;
+        height: fit-content;
+    }
 }
 
 

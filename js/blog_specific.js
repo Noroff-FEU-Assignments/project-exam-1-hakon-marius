@@ -43,7 +43,7 @@ async function fetchBlog() {
         </div class="ice">${img.outerHTML}</div><p>${updated.outerText}</p>${elementsHtml}<span id="modal"></span></div>`
 
         //gives the page a unique title
-        document.title = `Article | Eboe ${heading.firstChild.data}`;
+        document.title = `Eboe | article ${heading.firstChild.data}`;
 
     } catch
 
