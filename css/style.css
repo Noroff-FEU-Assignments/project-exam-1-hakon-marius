@@ -412,14 +412,10 @@ img {
     margin-left: 40px;
     max-width: 625px;
     padding-right: 33px;
-    margin-bottom: -20px
+
 }
 
-/*
-.detailsContainer img {
-    margin-bottom: -50px;
-}
-*/
+
 
 
 .detailsContainer p:last-child {
@@ -428,7 +424,7 @@ img {
 
 .detailsContainer h1 {
     margin-left: 40px;
-    margin-bottom: -15px;
+    margin-bottom: -5px;
 }
 
 
