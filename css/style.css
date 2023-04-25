@@ -618,7 +618,7 @@ footer h2 {
 .container_about_page {
     display: flex;
     flex-direction: row;
-    padding: 80px 40px 160px 40px;
+    padding: 50px 40px 160px 40px;
     margin: 0 auto;
     height: 60vh;
 }
