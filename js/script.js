@@ -29,7 +29,7 @@ function validateForm(event) {
 
 
     //email
-    if (validateEmail(email.value) === true) {
+    if (validateEmail && checkLength(email.value, 1) === true) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "inline-block";
@@ -67,7 +67,6 @@ function validateForm(event) {
 
 
 
-
 //listens for submit and calls the validateform function
 form.addEventListener("submit", validateForm);
 
@@ -89,13 +88,3 @@ function validateEmail(email) {
     return patternMatches;
 };
 
-const menuCheckbox = document.querySelector("#menu-checkbox");
-const body = document.querySelector("body");
-
-menuCheckbox.addEventListener("change", function () {
-    if (menuCheckbox.checked) {
-        body.classList.add("burgerMenu");
-    } else {
-        body.classList.remove("burgerMenu");
-    }
-});
