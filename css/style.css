@@ -52,7 +52,7 @@ body.burgerMenu {
 
 a {
     text-decoration: none;
-    color: (--dark-letter-color);
+    color: var(--dark-letter-color);
 }
 
 nav {
@@ -226,7 +226,7 @@ time {
 }
 
 .contact-header {
-    color: (--dark-letter-color);
+    color: var(--dark-letter-color);
     font-size: 25px;
 }
 
@@ -305,9 +305,8 @@ form button {
         max-height: 400px;
         width: fit-content;
         text-align: center;
-        -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
-        -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
-        box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+        -webkit-box-shadow: 0 28px 16px -26px var(--dark-letter-color);
+        box-shadow: 0 28px 16px -26px var(--dark-letter-color);
     }
 
     .blog-posts {
@@ -354,7 +353,7 @@ form button {
 
     .linkToFullPost {
         background-color: blue;
-        color: (--light-letter-color);
+        color: var(--light-letter-color);
         height: 15px;
         width: fit-content;
         padding: 8px;
@@ -408,7 +407,7 @@ img {
 .detailsContainer {
     display: grid;
     justify-content: center;
-    color: (--dark-letter-color);
+    color: var(--dark-letter-color);
     padding: 10px;
     max-width: 1000px;
     margin: 0 auto;
@@ -626,7 +625,7 @@ footer h2 {
     border-radius: 50%;
     width: 300px;
     margin-left: 50px;
-    border-style: 2px solid (--active-color);
+    border-style: 2px solid var(--active-color);
 }
 
 div.about_img {
