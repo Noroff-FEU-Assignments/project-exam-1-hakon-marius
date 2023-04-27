@@ -32,8 +32,8 @@ async function getBlogData(numberOfPosts) {
 
             blogContainer.innerHTML +=
                 /*
-                                `<div class="singlepost"><h2>${postTitle}</h2><img src="${img.outerHTML}</p>${post.excerpt.rendered}</p><div class="read-more-button-container">
-                                                        <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-more">Read article</h2><a/></div></div>
+                                `<div class="singlepost"><h2>${postTitle}</h2><img src="${img.outerHTML}</p>${post.excerpt.rendered}</p><div class="read-article-button-container">
+                                                        <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-article">Read article</h2><a/></div></div>
                                                         `
                 */
 
@@ -42,15 +42,15 @@ async function getBlogData(numberOfPosts) {
 
 
                 `<div class="singlepost"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
-            alt="${post.better_featured_image.alt_text}"></p>${post.excerpt.rendered}</p><div class="read-more-button-container">
-            <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-more">Read article</h2><a/></div>
+            alt="${post.better_featured_image.alt_text}"></p>${post.excerpt.rendered}</p><div class="read-article-button-container">
+            <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-article">Read article</h2><a/></div>
             `
 
 
         });
 
 
-        blogContainer.innerHTML += `<div class="read-more-button-container"><button onclick="getBlogData(20)"class="View_more_Posts" id="View_more_Posts">View More Posts</button></div>`;
+        blogContainer.innerHTML += `<div class="read-article-button-container"><button onclick="getBlogData(20)"class="View_more_Posts" id="View_more_Posts">View More Posts</button></div>`;
 
 
         //removes the button if there is more than 10 posts

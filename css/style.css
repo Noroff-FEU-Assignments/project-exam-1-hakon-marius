@@ -10,7 +10,7 @@
     --active-color: red;
     --body-background-color: #fcfeff;
     --contact-form-color: rgb(66, 76, 97);
-    --read-more-button: #451a93;
+    --read-article-button: #451a93;
 }
 
 .logo {
@@ -109,13 +109,17 @@ nav ul li a {
     display: none;
 }
 
+li>a,
+li>a {
+    border-radius: 5px;
+    transition: 0.4s;
+    border: 1px var(--main-color) dashed;
+    transition: none;
+}
 
 li>a.active,
 li>a:hover {
-    border-radius: 5px;
-    transition: 0.4s;
     border: 1px var(--active-color) dashed;
-    transition: none;
 }
 
 footer {
@@ -216,27 +220,40 @@ time {
 
 .contact-container {
     display: flex;
-    flex-direction: row;
+    background-color: #fcfeff;
+    padding: 20px 10px 10px 10px;
+}
+
+.mail {
+    color: var(--light-letter-color);
+    font-size: 1.4rem;
 }
 
 .contact-content {
-    display: flex;
+
     flex-direction: column;
     margin: auto;
+    top: 40px;
+
+}
+
+.contact-content p {
+    max-width: 500px;
 }
 
 .contact-header {
     color: var(--dark-letter-color);
-    font-size: 25px;
+    font-size: 30px;
+    margin-top: 40px;
 }
 
 .contact-form {
     background-color: var(--contact-form-color);
     color: var(--light-letter-color);
     height: fit-content;
-    max-width: 350px;
+    max-width: 500px;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 52px;
     padding: 35px 25px 100px 25px;
     text-align: left;
     border-radius: 4px;
@@ -260,6 +277,7 @@ fieldset legend {
     margin: 0 auto;
     font-weight: bold;
     margin-bottom: 30px;
+    font-size: larger;
 }
 
 fieldset {
@@ -278,9 +296,15 @@ form button {
     cursor: pointer;
 }
 
+
+form button:hover {
+    background-color: var(--active-color);
+}
+
 .button {
     text-align: end;
 }
+
 
 .contact-form textarea {
     min-height: 70px;
@@ -432,8 +456,8 @@ img {
     margin-bottom: -5px;
 }
 
-.read-more {
-    background: var(--read-more-button);
+.read-article {
+    background: var(--read-article-button);
     padding: 5px 10px;
     border-radius: 15px;
     color: var(--light-letter-color);
@@ -472,7 +496,7 @@ img {
         width: 95%;
     }
 
-    .read-more-button-container {
+    .read-article-button-container {
         display: flex;
         justify-content: center;
     }
@@ -510,7 +534,7 @@ button {
 }
 
 button#View_more_Posts.View_more_Posts {
-    background-color: var(--read-more-button);
+    background-color: var(--read-article-button);
     color: var(--light-letter-color);
     padding: 10px;
     border-radius: 15px;

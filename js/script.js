@@ -5,7 +5,7 @@ const email = document.querySelector("#email");
 const subject = document.querySelector("#subject");
 const message = document.querySelector("#message");
 const button = document.querySelector("button")
-
+const image = document.createElement("img");
 //errormessages
 const fullNameError = document.querySelector("#fullNameError");
 const emailError = document.querySelector("#emailError");
@@ -45,7 +45,7 @@ function validateForm(event) {
     }
 
     //message
-    if (checkLength(message.value, 39) === true) {
+    if (checkLength(message.value, 24) === true) {
         messageError.style.display = "none";
     } else {
         messageError.style.display = "inline-block";
@@ -53,14 +53,21 @@ function validateForm(event) {
     }
 
     if ((checkLength(fullName.value, 4) === true) &&
-        (validateEmail && checkLength(email.value, 6) === true) &&
+        (validateEmail && checkLength(email.value, 1) === true) &&
         (checkLength(subject.value, 14) === true) &&
-        (checkLength(message.value, 39) === true)
+        (checkLength(message.value, 24) === true)
 
     ) {
         //clears all input values
         form.reset();
         button.innerHTML = "form Sendt!";
+        form.innerHTML = "Thanks for reaching out!"
+        form.style.height = "593.6px";
+        form.style.backgroundColor = "var(--body-background-color)";
+        form.style.color = "black";
+        image.src = "/images/samesize/smileyman_rightsize.jpg";
+        form.appendChild(image);
+
     }
 
 }
