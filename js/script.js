@@ -65,6 +65,7 @@ function validateForm(event) {
         form.style.height = "593.6px";
         form.style.backgroundColor = "var(--body-background-color)";
         form.style.color = "black";
+        form.style.marginTop = "100px";
         image.src = "/images/samesize/smileyman_rightsize.jpg";
         form.appendChild(image);
 
