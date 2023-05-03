@@ -47,7 +47,7 @@ body {
 }
 
 body.burgerMenu {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 a {
@@ -205,6 +205,7 @@ time {
         z-index: 99;
     }
 
+
     nav ul li {
         display: block;
     }
@@ -253,7 +254,7 @@ time {
     height: fit-content;
     max-width: 500px;
     margin-top: 40px;
-    margin-bottom: 52px;
+    margin-bottom: 221px;
     padding: 35px 25px 100px 25px;
     text-align: left;
     border-radius: 4px;
@@ -402,9 +403,12 @@ form button:hover {
 }
 
 @media (max-width: 800px) {
+
     body {
         scroll-behavior: unset;
     }
+
+
 }
 
 img {
@@ -463,6 +467,10 @@ img {
     color: var(--light-letter-color);
     width: fit-content;
     margin-top: -5px;
+}
+
+.read-article:hover {
+    background: var(--active-color);
 }
 
 
@@ -534,13 +542,17 @@ button {
 }
 
 button#View_more_Posts.View_more_Posts {
-    background-color: var(--read-article-button);
+    background-color: var(--active-color);
     color: var(--light-letter-color);
     padding: 10px;
     border-radius: 15px;
     font-size: 18px;
     margin-bottom: 20px;
     cursor: pointer;
+}
+
+button#View_more_Posts.View_more_Posts:hover {
+    background-color: var(--main-color);
 }
 
 footer h2 {

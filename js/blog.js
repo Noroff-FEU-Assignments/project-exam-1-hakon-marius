@@ -1,3 +1,5 @@
+//import { searchValue, event } from "search.js";
+
 const blogContainer = document.querySelector("#blogContainer");
 
 async function getBlogData(numberOfPosts) {
@@ -19,34 +21,12 @@ async function getBlogData(numberOfPosts) {
             featuredImg = post.better_featured_image.media_details
             time = post.date
 
-
-
-
-            /*
-                        const parser = new DOMParser();
-                        const doc = parser.parseFromString(post.content.rendered, "text/html");
-                        const img = doc.querySelector(".wp-block-image");
-        
-
-
-
             blogContainer.innerHTML +=
-                /*
-                                `<div class="singlepost"><h2>${postTitle}</h2><img src="${img.outerHTML}</p>${post.excerpt.rendered}</p><div class="read-article-button-container">
-                                                        <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-article">Read article</h2><a/></div></div>
-                                                        `
-                */
-
-
-            blogContainer.innerHTML +=
-
 
                 `<div class="singlepost"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
             alt="${post.better_featured_image.alt_text}"></p>${post.excerpt.rendered}</p><div class="read-article-button-container">
             <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-article">Read article</h2><a/></div>
             `
-
-
         });
 
 
@@ -62,7 +42,9 @@ async function getBlogData(numberOfPosts) {
         }
 
     } catch (error) {
-        blogContainer.innerHTML = error;
+        console.log("There seems to be a problem", error)
+        blogContainer.innerHTML = "<p>Obs! something wrong while fetching data.</p>";
+
     }
 }
 function fetchPosts(numberOfPosts) {
@@ -74,13 +56,13 @@ getBlogData(10)
 
 
 
-
 const menuCheckbox = document.querySelector("#menu-checkbox");
 const body = document.querySelector("body");
 
 menuCheckbox.addEventListener("change", function () {
     if (menuCheckbox.checked) {
         body.classList.add("burgerMenu");
+
     } else {
         body.classList.remove("burgerMenu");
     }
@@ -94,3 +76,4 @@ window.addEventListener("load", function () {
         document.body.removechild(loading);
     })
 });
+

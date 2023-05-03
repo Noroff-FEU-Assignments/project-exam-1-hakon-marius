@@ -1,4 +1,6 @@
 
+const checkbox = document.querySelector("#menu-checkbox")
+
 const form = document.querySelector("#contactForm");
 const fullName = document.querySelector("#fullName");
 const email = document.querySelector("#email");
@@ -96,3 +98,15 @@ function validateEmail(email) {
     return patternMatches;
 };
 
+
+const menuCheckbox = document.querySelector("#menu-checkbox");
+const body = document.querySelector("body");
+
+menuCheckbox.addEventListener("change", function () {
+    if (menuCheckbox.checked) {
+        body.classList.add("burgerMenu");
+    } else {
+        body.classList.remove("burgerMenu");
+
+    }
+});
