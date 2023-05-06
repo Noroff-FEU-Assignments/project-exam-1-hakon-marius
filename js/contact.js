@@ -9,7 +9,7 @@ const emailError = document.querySelector("#emailError");
 const subjectError = document.querySelector("#subjectError");
 const messageError = document.querySelector("#messageError");
 const messageToSender = document.querySelector("#message-to-sender");
-
+const button = document.querySelector("form button")
 function validateForm(event) {
     event.preventDefault();
 
@@ -53,7 +53,8 @@ function validateForm(event) {
 
     ) {
         //clears all input values
-        // messageToSender.innerHTML = "yo";
+        button.innerHTML = `Sendt!`
+        messageToSender.innerHTML = `<p>Thank you for reaching out! I'll get back to you shortly.</p>`
         form.reset();
     }
 }
