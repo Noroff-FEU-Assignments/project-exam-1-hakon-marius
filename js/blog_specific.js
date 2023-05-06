@@ -3,7 +3,6 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-
 const container = document.querySelector(".container");
 
 const url = "https://eboe.no/eboe/wp-json/wp/v2/posts/" + id
@@ -17,23 +16,15 @@ async function fetchBlog() {
         const parser = new DOMParser();
 
         const doc = parser.parseFromString(postContent, "text/html");
-
-
         const heading = doc.querySelector(".wp-block-heading");
-
         const img = doc.querySelector(".wp-block-image");
         const title = doc.querySelector(".wp-block-post-title")
         const teksten = doc.querySelectorAll("p")
         const updated = doc.querySelector("time")
-
         const figure = doc.querySelector("figure")
-
-
-
 
         let elementsHtml = "";
         img.classList.add("wordpressImage")
-
 
         teksten.forEach(element => {
             elementsHtml += `<p>${element.textContent}</p>`;
@@ -59,7 +50,7 @@ async function fetchBlog() {
     modalImage.forEach((modalImage) => {
         modalImage.addEventListener("click", function () {
             console.log(modalImage.src)
-            myFunction(modalImage)
+            myModalFunction(modalImage)
         });
     });
 }
@@ -70,7 +61,7 @@ const modal = document.createElement("div");
 modal.classList.add("modal");
 document.body.appendChild(modal);
 
-function myFunction(modalImage) {
+function myModalFunction(modalImage) {
     const modalContent = document.createElement("div");
     modalContent.classList.add("modal-content");
     const modalImageClone = modalImage.cloneNode(true);
@@ -95,7 +86,6 @@ menuCheckbox.addEventListener("change", function () {
         body.classList.remove("burgerMenu");
     }
 });
-
 
 
 //Loader

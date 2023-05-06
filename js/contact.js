@@ -8,8 +8,8 @@ const fullNameError = document.querySelector("#fullNameError");
 const emailError = document.querySelector("#emailError");
 const subjectError = document.querySelector("#subjectError");
 const messageError = document.querySelector("#messageError");
+const messageToSender = document.querySelector("#message-to-sender");
 
-console.log(form)
 function validateForm(event) {
     event.preventDefault();
 
@@ -20,7 +20,6 @@ function validateForm(event) {
     } else {
         fullNameError.style.display = "inline-block";
         fullNameError.style.color = "yellow";
-        console.log("texxxxxxxxxxxxxxxttttttttt")
     }
 
     //email
@@ -53,16 +52,14 @@ function validateForm(event) {
         (checkLength(message.value, 24) === true)
 
     ) {
-
         //clears all input values
+        // messageToSender.innerHTML = "yo";
         form.reset();
     }
 }
 
-
 //listens for submit and calls the validateform function
 form.addEventListener("submit", validateForm);
-
 
 //checking length on email, name etc
 function checkLength(value, len) {
@@ -89,7 +86,6 @@ menuCheckbox.addEventListener("change", function () {
         body.classList.add("burgerMenu");
     } else {
         body.classList.remove("burgerMenu");
-
     }
 });
 

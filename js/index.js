@@ -33,11 +33,8 @@ async function latesBlogs() {
     } catch (error) {
     }
 
-
     for (let i = 0; i < item.length; i++) {
         let itemSlide = Math.floor(item.length / itemDisplay) - 1;
-
-        console.log("itemleft", itemleft)
 
         item[i].style.width = (screen.width / itemDisplay) - margin + "px"
         item[i].style.margin = `0 ${margin / 2}px`
@@ -45,14 +42,11 @@ async function latesBlogs() {
     }
 }
 
-
-
 latesBlogs()
 
 
 if (screen.width > 990) {
     itemDisplay = document.getElementsByClassName("slider-width")[0].getAttribute("data-four-img");
-    console.log("thiiis", itemDisplay)
     margin = itemDisplay * 5;
 } else if (screen.width > 700 && screen.width < 990) {
     itemDisplay = document.getElementsByClassName("slider-width")[0].getAttribute("data-three-img")
@@ -63,18 +57,11 @@ if (screen.width > 990) {
     margin = itemDisplay * 20;
 }
 
-console.log("thiiis", itemDisplay)
 
 let item = document.getElementsByClassName("item");
 let itemleft = item.length % itemDisplay;
-
 let itemSlide = Math.floor(item.length / itemDisplay) - 1;
-
-
-
 let buttons = document.querySelectorAll(".btn")
-
-
 
 function prev() {
     let slider = document.getElementsByClassName("slider-width")[0];
@@ -93,8 +80,6 @@ function prev() {
     }
 }
 
-
-
 function next() {
     let slider = document.getElementsByClassName("slider-width")[0];
     if (inc !== itemSlide + itemleft) {
@@ -111,14 +96,5 @@ function next() {
         if (lastItemIndex >= item.length - 1) {
             buttons[1].disabled = true;
         }
-
     }
 }
-
-
-
-//test
-
-const testcontainer = document.getElementsByClassName("testcontainer");
-
-console.log(testcontainer)

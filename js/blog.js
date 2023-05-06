@@ -1,11 +1,8 @@
-//import { searchValue, event } from "search.js";
-
 const blogContainer = document.querySelector("#blogContainer");
 
 async function getBlogData(numberOfPosts) {
 
     let url = `https://eboe.no/eboe/wp-json/wp/v2/posts?per_page=${numberOfPosts}`;
-
 
     try {
 
@@ -21,9 +18,7 @@ async function getBlogData(numberOfPosts) {
             featuredImg = post.better_featured_image.media_details
             time = post.date
 
-            blogContainer.innerHTML +=
-
-                `<div class="singlepost"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
+            blogContainer.innerHTML += `<div class="singlepost"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
             alt="${post.better_featured_image.alt_text}"></p>${post.excerpt.rendered}</p><div class="read-article-button-container">
             <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-article">Read article</h2><a/></div>
             `
@@ -31,7 +26,6 @@ async function getBlogData(numberOfPosts) {
 
 
         blogContainer.innerHTML += `<div class="read-article-button-container"><button onclick="getBlogData(20)"class="View_more_Posts" id="View_more_Posts">View More Posts</button></div>`;
-
 
         //removes the button if there is more than 10 posts
         const button = document.querySelector(".View_more_Posts");
@@ -44,7 +38,6 @@ async function getBlogData(numberOfPosts) {
     } catch (error) {
         console.log("There seems to be a problem", error)
         blogContainer.innerHTML = "<p>Obs! something wrong while fetching data.</p>";
-
     }
 }
 function fetchPosts(numberOfPosts) {
@@ -52,8 +45,6 @@ function fetchPosts(numberOfPosts) {
 
 }
 getBlogData(10)
-
-
 
 
 const menuCheckbox = document.querySelector("#menu-checkbox");
