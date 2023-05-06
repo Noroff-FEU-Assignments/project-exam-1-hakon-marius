@@ -1,36 +1,30 @@
-const checkbox = document.querySelector("#menu-checkbox")
-
 const form = document.querySelector("#contactForm");
 const fullName = document.querySelector("#fullName");
 const email = document.querySelector("#email");
 const subject = document.querySelector("#subject");
-const message = document.querySelector("#message");
-const button = document.querySelector("button")
-const image = document.createElement("img");
+
 //errormessages
 const fullNameError = document.querySelector("#fullNameError");
 const emailError = document.querySelector("#emailError");
 const subjectError = document.querySelector("#subjectError");
 const messageError = document.querySelector("#messageError");
 
-
+console.log(form)
 function validateForm(event) {
     event.preventDefault();
-
 
     //name
 
     if (checkLength(fullName.value, 4) === true) {
         fullNameError.style.display = "none";
-
     } else {
         fullNameError.style.display = "inline-block";
         fullNameError.style.color = "yellow";
+        console.log("texxxxxxxxxxxxxxxttttttttt")
     }
 
-
     //email
-    if (validateEmail(email.value) && checkLength(email.value, 1) === true) {
+    if (validateEmail && checkLength(email.value, 1) === true) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "inline-block";
@@ -54,25 +48,15 @@ function validateForm(event) {
     }
 
     if ((checkLength(fullName.value, 4) === true) &&
-        (validateEmail(email.value) && checkLength(email.value, 1) === true) &&
+        (validateEmail && checkLength(email.value, 1) === true) &&
         (checkLength(subject.value, 14) === true) &&
         (checkLength(message.value, 24) === true)
 
     ) {
+
         //clears all input values
         form.reset();
-        button.innerHTML = "form Sendt!";
-
-        form.innerHTML = "Thanks for reaching out!"
-        form.style.height = "593.6px";
-        form.style.backgroundColor = "var(--body-background-color)";
-        form.style.color = "black";
-        form.style.marginTop = "100px";
-        image.src = "/images/samesize/smileyman_rightsize.jpg";
-        form.appendChild(image);
-
     }
-
 }
 
 
@@ -88,7 +72,6 @@ function checkLength(value, len) {
         return false;
     }
 }
-
 
 //Validates email, checking for emailpattern
 function validateEmail(email) {
@@ -108,4 +91,14 @@ menuCheckbox.addEventListener("change", function () {
         body.classList.remove("burgerMenu");
 
     }
+});
+
+
+//Loader
+window.addEventListener("load", function () {
+    const loading = document.querySelector(".loading");
+    loading.classList.add("hide-loader");
+    loading.addEventListener("transitioned", function () {
+        document.body.removechild(loading);
+    })
 });

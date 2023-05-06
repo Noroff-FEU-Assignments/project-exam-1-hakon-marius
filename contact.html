@@ -25,7 +25,6 @@
 
 <body>
     <header>
-
         <nav>
             <input type="checkbox" id="menu-checkbox">
             <label for="menu-checkbox" class="menu-checkbox"><i class="fa-solid fa-bars burger-menu"></i></label>
@@ -38,6 +37,9 @@
             </ul>
         </nav>
     </header>
+    <div class="loading">
+        <P>Loading...</P>
+    </div>
     <div class="contact-intro-backGround">
         <div class="contact-intro">
             <h1 class="contact-header">Contact</h1>
@@ -53,11 +55,11 @@
                 <p><i class="fa-solid fa-phone"></i><a href="tel:+4755555555">Call me at +47755555555</a>
                 </p>
             </div>
-            <div class="contact-child"><a href="mailto:graffiti@eboe.com"><i class="fa-solid fa-envelope"></i>Mail us at
+            <div class="contact-child"><a href="mailto:graffiti@eboe.com"><i class="fa-solid fa-envelope"></i>Mail me at
                     graffiti@eboe.com</a></div>
         </div>
+        <div class="submitMessage"></div>
         <div class="contact-content">
-
             <form id="contactForm" class="contact-form">
                 <fieldset>
                     <legend>Message</legend>
@@ -76,14 +78,12 @@
                             characters
                             min</span></label>
                     <textarea id="message" name="message" placeholder="Type message here"></textarea>
-                    <div class="button"><button>Submit</button></div>
+                    <button>Submit</button>
                 </fieldset>
+
             </form>
         </div>
-        <p class="message"></p>
-        <div class="loading">
-            <P>Loading...</P>
-        </div>
+
     </main>
     <footer>
         <a href="https://www.instagram.com" class="fa-brands fa-instagram"
@@ -92,7 +92,6 @@
             aria-label="Follow Eboe on Facebook"></a>
         <h2>&copy; Eboe graffiti chronicles</h2>
     </footer>
-    <script src="js/blog.js"></script>
     <script src="js/script.js"></script>
 </body>
 

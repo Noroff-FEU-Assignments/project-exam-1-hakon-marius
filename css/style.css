@@ -313,7 +313,6 @@ time {
 }
 
 
-
 .contact-form {
     background-color: var(--contact-form-color);
     color: var(--light-letter-color);
@@ -324,6 +323,8 @@ time {
     text-align: left;
     border-radius: 4px;
 }
+
+
 
 .contact-form input,
 textarea {
