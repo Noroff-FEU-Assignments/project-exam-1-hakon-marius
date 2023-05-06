@@ -229,9 +229,22 @@ time {
 }
 
 .contact-intro-backGround {
+
+    background: rgb(2, 0, 36);
+    width: 100%;
+    padding: 40px 20px 10px 20px;
+    background-image: linear-gradient(-45deg, rgba(2, 0, 36, 1) 0%, rgb(39, 40, 40) 35%, rgb(127, 194, 208) 100%);
+}
+
+.contact-intro {
     max-width: 500px;
     margin: auto;
-    padding: 40px 20px 10px 20px;
+    color: var(--light-letter-color);
+    font-size: 20px;
+}
+
+.contact-header {
+    color: var(--light-letter-color);
 }
 
 
@@ -300,25 +313,6 @@ time {
 }
 
 
-/*
-.contact-content {
-    margin: auto;
-    flex-direction: column;
-
-    top: 40px;
-
-}
-
-
-.contact-content p {
-    max-width: 600px;
-}*/
-
-.contact-header {
-    color: var(--dark-letter-color);
-    font-size: 30px;
-    margin-top: 40px;
-}
 
 .contact-form {
     background-color: var(--contact-form-color);
