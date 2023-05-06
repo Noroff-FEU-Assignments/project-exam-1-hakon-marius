@@ -28,7 +28,7 @@ async function fetchBlog() {
 
         const figure = doc.querySelector("figure")
 
-        console.log("img", img)
+
 
 
         let elementsHtml = "";
@@ -85,7 +85,7 @@ function myFunction(modalImage) {
     });
 }
 
-/*
+
 const menuCheckbox = document.querySelector("#menu-checkbox");
 const body = document.querySelector("body");
 menuCheckbox.addEventListener("change", function () {
@@ -94,7 +94,7 @@ menuCheckbox.addEventListener("change", function () {
     } else {
         body.classList.remove("burgerMenu");
     }
-});*/
+});
 
 
 

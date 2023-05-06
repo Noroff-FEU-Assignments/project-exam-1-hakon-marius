@@ -51,15 +51,15 @@ latesBlogs()
 
 
 if (screen.width > 990) {
-    itemDisplay = document.getElementsByClassName("slider-width")[0].getAttribute("item-display-d");
+    itemDisplay = document.getElementsByClassName("slider-width")[0].getAttribute("data-four-img");
     console.log("thiiis", itemDisplay)
     margin = itemDisplay * 5;
 } else if (screen.width > 700 && screen.width < 990) {
-    itemDisplay = document.getElementsByClassName("slider-width")[0].getAttribute("item-display-t")
+    itemDisplay = document.getElementsByClassName("slider-width")[0].getAttribute("data-three-img")
     margin = itemDisplay * 6.8;
 } else {
     (screen.width > 285 && screen.width < 700)
-    itemDisplay = document.getElementsByClassName("slider-width")[0].getAttribute("item-display-m")
+    itemDisplay = document.getElementsByClassName("slider-width")[0].getAttribute("data-one-img")
     margin = itemDisplay * 20;
 }
 
@@ -114,3 +114,11 @@ function next() {
 
     }
 }
+
+
+
+//test
+
+const testcontainer = document.getElementsByClassName("testcontainer");
+
+console.log(testcontainer)

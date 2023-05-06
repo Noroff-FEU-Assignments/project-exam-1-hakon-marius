@@ -1,4 +1,3 @@
-
 const checkbox = document.querySelector("#menu-checkbox")
 
 const form = document.querySelector("#contactForm");
@@ -17,7 +16,7 @@ const messageError = document.querySelector("#messageError");
 
 function validateForm(event) {
     event.preventDefault();
-    console.log("help")
+
 
     //name
 
@@ -31,7 +30,7 @@ function validateForm(event) {
 
 
     //email
-    if (validateEmail && checkLength(email.value, 1) === true) {
+    if (validateEmail(email.value) && checkLength(email.value, 1) === true) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "inline-block";
@@ -55,7 +54,7 @@ function validateForm(event) {
     }
 
     if ((checkLength(fullName.value, 4) === true) &&
-        (validateEmail && checkLength(email.value, 1) === true) &&
+        (validateEmail(email.value) && checkLength(email.value, 1) === true) &&
         (checkLength(subject.value, 14) === true) &&
         (checkLength(message.value, 24) === true)
 
@@ -63,6 +62,7 @@ function validateForm(event) {
         //clears all input values
         form.reset();
         button.innerHTML = "form Sendt!";
+
         form.innerHTML = "Thanks for reaching out!"
         form.style.height = "593.6px";
         form.style.backgroundColor = "var(--body-background-color)";
@@ -74,7 +74,6 @@ function validateForm(event) {
     }
 
 }
-
 
 
 //listens for submit and calls the validateform function

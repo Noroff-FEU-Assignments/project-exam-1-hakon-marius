@@ -38,20 +38,30 @@
             </ul>
         </nav>
     </header>
-    <main class="contact-container">
-
-        <div class="contact-content">
+    <div class="contact-intro-backGround">
+        <div class="contact-intro">
             <h1 class="contact-header">Contact</h1>
-            <p>Contact if you want a paint job or have any questions. Feel free to say hello, contact her, dm or
-                send a
-                mail</p>
 
-
+            <p>Contact if you want a paint job or have any questions. Feel free to say hello.
+            <p>Please fill in the
+                form!</p>
+            </p>
+        </div>
+    </div>
+    <main class="contact-container">
+        <div class="contact-intro-section-2">
+            <div class="contact-child">
+                <p><i class="fa-solid fa-phone"></i><a href="tel:+4755555555">Call me at +47755555555</a>
+                </p>
+            </div>
+            <div class="contact-child"><a href="mailto:graffiti@eboe.com"><i class="fa-solid fa-envelope"></i>Mail us at
+                    graffiti@eboe.com</a></div>
+        </div>
+        <div class="contact-content">
 
             <form id="contactForm" class="contact-form">
-
                 <fieldset>
-                    <legend>Contact info</legend>
+                    <legend>Message</legend>
                     <label for="fullName" class="form-block">Your name<span class="Errormessage" id="fullNameError"> 5
                             characters required</span></label>
                     <input type="text" name="fullName" id="fullName" placeholder="Your name">
@@ -69,15 +79,12 @@
                     <textarea id="message" name="message" placeholder="Type message here"></textarea>
                     <div class="button"><button>Submit</button></div>
                 </fieldset>
-
             </form>
-
         </div>
         <p class="message"></p>
         <div class="loading">
             <P>Loading...</P>
         </div>
-
     </main>
     <footer>
         <a href="https://www.instagram.com" class="fa-brands fa-instagram"
@@ -88,7 +95,6 @@
     </footer>
     <script src="js/blog.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
