@@ -7,7 +7,7 @@
     --main-color: black;
     --light-letter-color: white;
     --dark-letter-color: black;
-    --active-color: red;
+    --active-color: rgb(184, 0, 0);
     --body-background-color: #fcfeff;
     --contact-form-color: rgb(66, 76, 97);
     --read-article-button: #451a93;
@@ -371,11 +371,7 @@ form button:hover {
 }
 
 .Errormessage {
-    margin-left: 5px;
-    background-color: var(--contact-form-color);
-    color: var(--contact-form-color);
-    padding: 3px;
-    border-radius: 2px;
+    margin-left: 10px;
 }
 
 @media (max-width: 700px) {
@@ -604,6 +600,7 @@ img {
 
 #searchBlog {
     border-radius: 5px;
+    font-size: 18px;
 
 }
 
@@ -654,7 +651,7 @@ button#View_more_Posts.View_more_Posts {
     color: var(--light-letter-color);
     padding: 10px;
     border-radius: 15px;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
     cursor: pointer;
     margin: 30px auto;

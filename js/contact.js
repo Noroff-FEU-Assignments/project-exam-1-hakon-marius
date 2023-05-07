@@ -15,6 +15,15 @@ function validateForm(event) {
 
     //name
 
+
+    /*
+    if (checkLength(fullName.value, 4) === true) {
+        fullNameError.style.display = "none";
+    } else {
+        fullNameError.style.display = "inline-block";
+        fullNameError.style.color = "yellow";
+    }*/
+
     if (checkLength(fullName.value, 4) === true) {
         fullNameError.style.display = "none";
     } else {

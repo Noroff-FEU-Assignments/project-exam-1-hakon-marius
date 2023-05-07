@@ -27,7 +27,8 @@
     <header>
         <nav>
             <input type="checkbox" id="menu-checkbox">
-            <label for="menu-checkbox" class="menu-checkbox"><i class="fa-solid fa-bars burger-menu"></i></label>
+            <label for="menu-checkbox" class="menu-checkbox" aria-label="Toggle menu"><i
+                    class="fa-solid fa-bars burger-menu" aria-label="burger Icon"></i></label>
             <a href="index.html" class="logo" alt="Eboe graffiti chronicles logo">Eboe!</a>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -63,18 +64,18 @@
             <form id="contactForm" class="contact-form">
                 <fieldset>
                     <legend>Message</legend>
-                    <label for="fullName" class="form-block">Your name<span class="Errormessage" id="fullNameError"> 5
+                    <label for="fullName" class="form-block">Your name<span class="Errormessage" id="fullNameError">5
                             characters required</span></label>
                     <input type="text" name="fullName" id="fullName" placeholder="Your name">
-                    <label for="email" class="form-block">Your Email<span class="Errormessage" id="emailError"> type
+                    <label for="email" class="form-block">Your Email<span class="Errormessage" id="emailError">Type
                             valid email</span></label>
                     <input type="text" name="email" id="email" placeholder="email">
-                    <label for="subject" class="form-block">Subject<span class="Errormessage" id="subjectError"> 15
+                    <label for="subject" class="form-block">Subject<span class="Errormessage" id="subjectError">15
                             characters
                             min</span>
                     </label>
                     <input type="text" name="subject" id="subject" placeholder="subject">
-                    <label for="message" class="form-block">Message<span class="Errormessage" id="messageError"> 25
+                    <label for="message" class="form-block">Message<span class="Errormessage" id="messageError">25
                             characters
                             min</span></label>
                     <textarea id="message" name="message" placeholder="Type message here"></textarea>
