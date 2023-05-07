@@ -36,11 +36,9 @@ async function fetchBlog() {
         //gives the page a unique title
         document.title = `Eboe | article ${heading.firstChild.data}`;
 
-    } catch
-
-    (error) {
-        console.log(error)
-        detailsContainer.innerHTML = error;
+    } catch (error) {
+        console.log("There seems to be a problem", error)
+        blogContainer.innerHTML = "<p>Obs! something wrong while fetching data.</p>";
     }
 
 

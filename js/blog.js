@@ -1,9 +1,15 @@
 const blogContainer = document.querySelector("#blogContainer");
+const button = document.querySelector("#searchBlog");
+
 
 async function getBlogData(numberOfPosts) {
 
+    const searchvar = searchfield.value.toLowerCase();
+
     let url = `https://eboe.no/eboe/wp-json/wp/v2/posts?per_page=${numberOfPosts}`;
 
+    if (searchvar !== "") url = url + `&search=${searchvar}`;
+    console.log("url", url)
     try {
 
         const response = await fetch(url);
@@ -18,10 +24,14 @@ async function getBlogData(numberOfPosts) {
             featuredImg = post.better_featured_image.media_details
             time = post.date
 
-            blogContainer.innerHTML += `<div class="singlepost"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
-            alt="${post.better_featured_image.alt_text}"></p>${post.excerpt.rendered}</p><div class="read-article-button-container">
-            <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-article">Read article</h2><a/></div>
-            `
+            if (postTitle.toLowerCase().indexOf(searchfield.value.toLowerCase()) > -1 || searchfield.value.toLowerCase() == "") {
+                blogContainer.innerHTML += `<div class="singlepost"><h2>${postTitle}</h2><img src="${post.better_featured_image.source_url}" 
+                alt="${post.better_featured_image.alt_text}"></p>${post.excerpt.rendered}</p><div class="read-article-button-container">
+                <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-article">Read article</h2><a/></div>
+                `
+            }
+
+
         });
 
 
@@ -66,5 +76,13 @@ window.addEventListener("load", function () {
     loading.addEventListener("transitioned", function () {
         document.body.removechild(loading);
     })
+});
+
+
+
+button.addEventListener("click", function () {
+    console.log(searchfield.value);
+    getBlogData(20);
+
 });
 

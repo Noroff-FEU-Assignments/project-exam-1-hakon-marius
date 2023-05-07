@@ -152,7 +152,7 @@ time {
 }
 
 
-/* Index page*/
+/* Index-page*/
 
 .index-intro p {
     text-align: center;
@@ -207,7 +207,6 @@ time {
         z-index: 99;
     }
 
-
     nav ul li {
         display: block;
     }
@@ -218,8 +217,7 @@ time {
 }
 
 
-
-/*contactpage*/
+/*contact-page*/
 
 .contact-container {
     display: flex;
@@ -247,8 +245,6 @@ time {
     color: var(--light-letter-color);
 }
 
-
-
 .contact-img {
     display: flex;
     justify-content: center;
@@ -266,15 +262,12 @@ time {
     color: var(--light-letter-color);
 }
 
-
 .contact-intro-section-2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     display: flex;
 }
-
-
 
 .fa-phone,
 .fa-envelope {
@@ -324,8 +317,6 @@ time {
     border-radius: 4px;
 }
 
-
-
 .contact-form input,
 textarea {
     width: 100%;
@@ -363,7 +354,6 @@ form button {
     cursor: pointer;
 }
 
-
 form button:hover {
     background-color: var(--active-color);
 }
@@ -371,7 +361,6 @@ form button:hover {
 .button {
     text-align: end;
 }
-
 
 .contact-form textarea {
     min-height: 70px;
@@ -485,8 +474,6 @@ form button:hover {
     body {
         scroll-behavior: unset;
     }
-
-
 }
 
 img {
@@ -509,7 +496,7 @@ img {
 }
 
 
-/*blog_specific*/
+/*blog-specific-page*/
 
 .detailsContainer {
     display: grid;
@@ -592,7 +579,52 @@ img {
     cursor: pointer;
 }
 
-/*blogpage*/
+
+
+/*blog-page*/
+
+.blog-posts {
+    min-height: 80vh;
+}
+
+.inputSection {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#searchfield {
+    height: 25px;
+    margin: 2px;
+}
+
+#searchfield:hover {
+    background-color: #f8e0f1;
+}
+
+#searchBlog {
+    border-radius: 5px;
+
+}
+
+#searchBlog:hover {
+    background-color: var(--active-color);
+}
+
+.inputSectionItems {
+    max-width: 500px;
+    min-height: 200px;
+}
+
+.inputSectionItems button {
+    background: var(--read-article-button);
+    color: var(--light-letter-color);
+}
+
+.searchinput-button {
+    display: flex;
+    justify-content: center;
+}
 
 .blogpage-heading {
     text-align: center;
@@ -716,8 +748,6 @@ footer h2 {
     display: flex;
     justify-content: center;
 }
-
-
 
 /*about page*/
 
