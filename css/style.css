@@ -619,8 +619,9 @@ img {
 }
 
 .inputSectionItems {
-    max-width: 500px;
+    max-width: 600px;
     min-height: 200px;
+    padding: 10px;
 }
 
 .inputSectionItems button {
