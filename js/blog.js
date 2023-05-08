@@ -4,12 +4,14 @@ const button = document.querySelector("#searchBlog");
 
 async function getBlogData(numberOfPosts) {
 
+
+
     const searchvar = searchfield.value.toLowerCase();
 
     let url = `https://eboe.no/eboe/wp-json/wp/v2/posts?per_page=${numberOfPosts}`;
 
     if (searchvar !== "") url = url + `&search=${searchvar}`;
-    console.log("url", url)
+
     try {
 
         const response = await fetch(url);
@@ -30,8 +32,6 @@ async function getBlogData(numberOfPosts) {
                 <a href="blog_specific.html?id=${post.id}" class="singlepost"><h2 class="read-article">Read article</h2><a/></div>
                 `
             }
-
-
         });
 
 
@@ -79,9 +79,7 @@ window.addEventListener("load", function () {
 });
 
 
-
 button.addEventListener("click", function () {
-    console.log(searchfield.value);
     getBlogData(20);
 
 });

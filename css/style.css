@@ -147,9 +147,6 @@ footer {
     color: var(--active-color);
 }
 
-time {
-    font-weight: 700;
-}
 
 
 /* Index-page*/
@@ -566,7 +563,6 @@ img {
     .modal-content img {
         width: 95%;
     }
-
 }
 
 .detailsContainer figure img {
@@ -631,9 +627,7 @@ img {
 
 .searchinput-button {
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
-
 }
 
 .blogpage-heading {
@@ -703,10 +697,6 @@ footer h2 {
     left: 0;
     top: 0;
     transition: 1.0s ease-in-out;
-    -webkit-transition: 1.0s ease-in-out;
-    -moz-transition: 1.0s ease-in-out;
-    -ms-transition: 1.0s ease-in-out;
-    -o-transition: 1.0s ease-in-out;
 }
 
 .item {

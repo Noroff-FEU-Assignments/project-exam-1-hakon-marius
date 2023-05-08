@@ -4,8 +4,6 @@ let margin = 0;
 let slider = document.getElementsByClassName("slider-width");
 let itemDisplay = 0;
 
-console.log("slider", slider)
-
 async function latesBlogs() {
 
     let url = `https://eboe.no/eboe/wp-json/wp/v2/posts?per_page=12`;
