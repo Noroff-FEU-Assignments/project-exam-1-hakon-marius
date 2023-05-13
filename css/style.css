@@ -790,8 +790,12 @@ div.about_img {
     }
 
     .container_about_page {
-        padding: 40px 40px 160px 40px;
+        padding: 30px 40px 160px 40px;
 
+    }
+
+    .container_about_page img {
+        margin: 10px auto;
     }
 }
 
