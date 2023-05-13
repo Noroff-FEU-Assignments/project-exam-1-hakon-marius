@@ -86,7 +86,7 @@ button.addEventListener("click", function () {
 
 
 //search function
-const search = document.querySelector("search-articles");
+const search = document.querySelector("#search-articles");
 
 search.onkeyup = function searcher() {
     const searchValue = event.target.value.trim().toLowerCase();
