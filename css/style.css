@@ -772,6 +772,7 @@ footer h2 {
     max-width: fit-content;
     margin-left: 10px;
     border-style: 2px solid var(--active-color);
+    margin-top: 35px;
 }
 
 div.about_img {
@@ -787,6 +788,7 @@ div.about_img {
         border-radius: 0%;
         width: 100%;
         height: fit-content;
+        margin-top: 0px;
     }
 
     .container_about_page {
