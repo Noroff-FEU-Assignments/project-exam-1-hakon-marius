@@ -8,6 +8,7 @@ window.addEventListener("load", function () {
 });
 
 
+//checkbox
 const menuCheckbox = document.querySelector("#menu-checkbox");
 const body = document.querySelector("body");
 

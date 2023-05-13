@@ -1,12 +1,7 @@
 const blogContainer = document.querySelector("#blogContainer");
 const button = document.querySelector("#searchBlog");
 
-
-
-
 async function getBlogData(numberOfPosts) {
-
-
 
     const searchvar = searchfield.value.toLowerCase();
 
@@ -54,47 +49,19 @@ async function getBlogData(numberOfPosts) {
 
 function fetchPosts(numberOfPosts) {
     getBlogData(numberOfPosts);
-
 }
 getBlogData(10)
-
-/*
-const menuCheckbox = document.querySelector("#menu-checkbox");
-const body = document.querySelector("body");
-
-menuCheckbox.addEventListener("change", function () {
-    if (menuCheckbox.checked) {
-        body.classList.add("burgerMenu");
-
-    } else {
-        body.classList.remove("burgerMenu");
-    }
-});
-
-
-//Loader
-window.addEventListener("load", function () {
-    const loading = document.querySelector(".loading");
-    loading.classList.add("hide-loader");
-    loading.addEventListener("transitioned", function () {
-        document.body.removechild(loading);
-    })
-});*/
 
 
 button.addEventListener("click", function () {
     getBlogData(20);
-
 });
-
 
 
 //search function
 const search = document.querySelector("#search-articles");
-
 search.onkeyup = function searcher(event) {
     const searchValue = event.target.value.trim().toLowerCase();
-
     const filteredPost = post.filter(function (posts) {
 
         if (post.postTitle.toLowerCase().startsWith(searchValue)) {
@@ -102,6 +69,5 @@ search.onkeyup = function searcher(event) {
             return true;
         }
     })
-
 }
 

@@ -36,7 +36,6 @@ async function latesBlogs() {
 
         item[i].style.width = (screen.width / itemDisplay) - margin + "px"
         item[i].style.margin = `0 ${margin / 2}px`
-
     }
 }
 
@@ -61,6 +60,8 @@ let itemleft = item.length % itemDisplay;
 let itemSlide = Math.floor(item.length / itemDisplay) - 1;
 let buttons = document.querySelectorAll(".btn")
 
+
+//function for prev button
 function prev() {
     let slider = document.getElementsByClassName("slider-width")[0];
     if (inc !== 0) {
@@ -78,6 +79,8 @@ function prev() {
     }
 }
 
+
+//function for next button
 function next() {
     let slider = document.getElementsByClassName("slider-width")[0];
     if (inc !== itemSlide + itemleft) {
@@ -98,24 +101,3 @@ function next() {
 }
 
 
-/*
-const menuCheckbox = document.querySelector("#menu-checkbox");
-const body = document.querySelector("body");
-
-menuCheckbox.addEventListener("change", function () {
-    if (menuCheckbox.checked) {
-        body.classList.add("burgerMenu");
-
-    } else {
-        body.classList.remove("burgerMenu");
-    }
-});
-
-//Loader
-window.addEventListener("load", function () {
-    const loading = document.querySelector(".loading");
-    loading.classList.add("hide-loader");
-    loading.addEventListener("transitioned", function () {
-        document.body.removechild(loading);
-    })
-});*/

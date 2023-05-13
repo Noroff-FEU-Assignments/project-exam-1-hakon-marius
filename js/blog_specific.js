@@ -2,10 +2,9 @@ const detailsContainer = document.querySelector(".detailsContainer");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-
 const container = document.querySelector(".container");
-
 const url = "https://eboe.no/eboe/wp-json/wp/v2/posts/" + id
+
 
 async function fetchBlog() {
     try {
@@ -55,6 +54,7 @@ async function fetchBlog() {
 fetchBlog()
 
 
+//Modal function
 const modal = document.createElement("div");
 modal.classList.add("modal");
 document.body.appendChild(modal);
@@ -73,25 +73,3 @@ function myModalFunction(modalImage) {
         modalContent.remove();
     });
 }
-
-/*
-
-const menuCheckbox = document.querySelector("#menu-checkbox");
-const body = document.querySelector("body");
-menuCheckbox.addEventListener("change", function () {
-    if (menuCheckbox.checked) {
-        body.classList.add("burgerMenu");
-    } else {
-        body.classList.remove("burgerMenu");
-    }
-});
-
-
-//Loader
-window.addEventListener("load", function () {
-    const loading = document.querySelector(".loading");
-    loading.classList.add("hide-loader");
-    loading.addEventListener("transitioned", function () {
-        document.body.removechild(loading);
-    })
-});*/
