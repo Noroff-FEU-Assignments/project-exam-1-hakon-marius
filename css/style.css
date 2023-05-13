@@ -788,6 +788,11 @@ div.about_img {
         width: 100%;
         height: fit-content;
     }
+
+    .container_about_page {
+        padding: 40px 40px 160px 40px;
+
+    }
 }
 
 
