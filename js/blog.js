@@ -2,6 +2,8 @@ const blogContainer = document.querySelector("#blogContainer");
 const button = document.querySelector("#searchBlog");
 
 
+
+
 async function getBlogData(numberOfPosts) {
 
 
@@ -44,19 +46,19 @@ async function getBlogData(numberOfPosts) {
         } else {
             button.style.display = "none";
         }
-
     } catch (error) {
         console.log("There seems to be a problem", error)
         blogContainer.innerHTML = "<p>Obs! something wrong while fetching data.</p>";
     }
 }
+
 function fetchPosts(numberOfPosts) {
     getBlogData(numberOfPosts);
 
 }
 getBlogData(10)
 
-
+/*
 const menuCheckbox = document.querySelector("#menu-checkbox");
 const body = document.querySelector("body");
 
@@ -69,6 +71,7 @@ menuCheckbox.addEventListener("change", function () {
     }
 });
 
+
 //Loader
 window.addEventListener("load", function () {
     const loading = document.querySelector(".loading");
@@ -76,13 +79,14 @@ window.addEventListener("load", function () {
     loading.addEventListener("transitioned", function () {
         document.body.removechild(loading);
     })
-});
+});*/
 
 
 button.addEventListener("click", function () {
     getBlogData(20);
 
 });
+
 
 
 //search function
@@ -100,3 +104,4 @@ search.onkeyup = function searcher(event) {
     })
 
 }
+

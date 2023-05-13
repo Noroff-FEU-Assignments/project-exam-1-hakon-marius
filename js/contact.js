@@ -80,6 +80,7 @@ function validateEmail(email) {
 };
 
 
+/*
 const menuCheckbox = document.querySelector("#menu-checkbox");
 const body = document.querySelector("body");
 
@@ -99,4 +100,4 @@ window.addEventListener("load", function () {
     loading.addEventListener("transitioned", function () {
         document.body.removechild(loading);
     })
-});
+});*/
