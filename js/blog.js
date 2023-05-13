@@ -88,10 +88,10 @@ button.addEventListener("click", function () {
 //search function
 const search = document.querySelector("#search-articles");
 
-search.onkeyup = function searcher() {
+search.onkeyup = function searcher(event) {
     const searchValue = event.target.value.trim().toLowerCase();
 
-    const filteredPost = post.filter(function (post) {
+    const filteredPost = post.filter(function (posts) {
 
         if (post.postTitle.toLowerCase().startsWith(searchValue)) {
             console.log(value)
