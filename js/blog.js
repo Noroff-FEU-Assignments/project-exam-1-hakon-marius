@@ -89,7 +89,7 @@ button.addEventListener("click", function () {
 const search = document.querySelector("search-articles");
 
 search.onkeyup = function searcher() {
-    const searchValue = target.value.trim().toLowerCase();
+    const searchValue = event.target.value.trim().toLowerCase();
 
     const filteredPost = post.filter(function (post) {
 
