@@ -20,3 +20,4 @@ menuCheckbox.addEventListener("change", function () {
         body.classList.remove("burgerMenu");
     }
 });
+
