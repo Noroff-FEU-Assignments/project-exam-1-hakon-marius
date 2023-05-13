@@ -115,13 +115,13 @@ li>a,
 li>a {
     border-radius: 5px;
     transition: 0.4s;
-    border: 1px var(--main-color) dashed;
+    border: 2px var(--main-color) dashed;
     transition: none;
 }
 
 li>a.active,
 li>a:hover {
-    border: 1px var(--active-color) dashed;
+    border: 2px var(--active-color) dashed;
 }
 
 footer {
@@ -686,7 +686,7 @@ footer h2 {
 }
 
 .slider-container img {
-    height: 150px;
+    height: 180px;
 }
 
 .slider-width {
