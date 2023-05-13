@@ -200,7 +200,7 @@ footer {
         top: 75px;
         left: +100%;
         text-align: center;
-        transition: 0.4s;
+        transition: 0.6s;
         z-index: 99;
     }
 
@@ -826,6 +826,7 @@ div.about_img {
     justify-content: center;
     background-color: rgb(68, 74, 72);
     transition: opacity 0.80s, visibility 0.80s;
+
 }
 
 .hide-loader {
@@ -852,7 +853,7 @@ div.about_img {
     border: 5px solid rgb(42, 85, 212);
     border-radius: 50%;
     border-top-color: rgb(82, 96, 168);
-    animation: loading 09s ease infinite;
+    animation: loading 0.9s ease infinite;
 }
 
 @keyframes loading {

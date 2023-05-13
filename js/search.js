@@ -1,10 +1,9 @@
-export function searcher(searchValue, event);
 
 const search = document.querySelector("search-articles");
 
 
 search.onkeyup = function searcher() {
-    const searchValue = event.target.value.trim().toLowerCase();
+    const searchValue = target.value.trim().toLowerCase();
 
     const filteredPost = post.filter(function (post) {
 
