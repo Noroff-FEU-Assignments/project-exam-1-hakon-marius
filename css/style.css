@@ -754,13 +754,13 @@ footer h2 {
 .container_about_page {
     display: flex;
     flex-direction: row;
-    padding: 50px 40px 160px 40px;
+    padding: 100px 40px 160px 40px;
     margin: 0 auto;
     min-height: 80vh;
 }
 
 .container_about_page p {
-    max-width: 550px;
+    max-width: 500px;
 }
 
 .container_about_page div {
@@ -768,10 +768,9 @@ footer h2 {
 }
 
 .container_about_page img {
-    height: 300px;
-    border-radius: 50%;
-    width: 300px;
-    margin-left: 50px;
+    max-height: 280px;
+    max-width: fit-content;
+    margin-left: 10px;
     border-style: 2px solid var(--active-color);
 }
 
@@ -792,13 +791,14 @@ div.about_img {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .container_about_page {
         flex-direction: column;
     }
 
     .container_about_page img {
-        margin: auto;
+        margin: 50px auto;
+        max-width: 400px;
     }
 }
 
