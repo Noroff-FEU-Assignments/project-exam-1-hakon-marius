@@ -25,6 +25,8 @@ Should have a responsive "latest posts" slider that displays 4 images on full sc
 
 Blog page has ten blog posts and a button to view more posts.
 
+<h2>Blog post specific pages</h2>
+
 
 ## Built With
 - HTML
