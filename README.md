@@ -17,7 +17,7 @@ Create a blog page with a topic of your choice, with least the following pages:
 -	Blog post specific pages
 -	Contact page
 
-Homepage should have a responsive "latest posts" slider that displays 4 images on full screens, 3 images on tablet size screens, and 1 image on small screens. 
+<b>Homepage</b> should have a responsive "latest posts" slider that displays 4 images on full screens, 3 images on tablet size screens, and 1 image on small screens. 
 
 Blog page has ten blog posts and a button to view more posts.
 
