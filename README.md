@@ -25,7 +25,8 @@ Should have a responsive "latest posts" slider that displays 4 images on full sc
 
 Blog page has ten blog posts and a button to view more posts.
 
-<h2>Blog post specific pages</h2>
+<b>Blog post specific pages</b>
+The blog-specific page dynamically generates its content based on a query string parameter, which is determined by the link the user clicks on. Additionally, there is a modal image feature that expands in size when clicked and hides when clicked again.
 
 
 ## Built With
