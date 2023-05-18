@@ -29,10 +29,10 @@ The blog-specific page dynamically generates its content based on a query string
 <b>Contact page</b>
 The Contact page has a form with 4 input fields. The input text is validated using Javascript.  
 
-•	Name (Should be more than 5 characters long)  
+•	Name (more than 5 characters long)  
 •	Email address (Must be a valid email address)  
-•	Subject (Should be more than 15 characters long)  
-•	Message content (Should be more than 25 characters long)
+•	Subject (more than 15 characters long)  
+•	Message content (more than 25 characters long)
 
 
 
