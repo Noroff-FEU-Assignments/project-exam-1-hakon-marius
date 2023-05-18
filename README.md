@@ -20,6 +20,8 @@ Create a blog page with a topic of your choice, with least the following pages:
 <b>Homepage</b> 
 Has a responsive "latest posts" slider that displays 4 images on full screens, 3 images on tablet size screens, and 1 image on small screens.  
 
+<b>About page</b> is a short intoduction of the blogger
+
 <b>Blog page (List of blog posts)</b>
 The Blog page has ten blog posts and a button to view more posts.
 
@@ -34,7 +36,7 @@ The Contact page has a form with 4 input fields. The input text is validated usi
 •	Subject (more than 15 characters long)  
 •	Message content (more than 25 characters long)
 
-<b>About page</b> is a short intoduction of the blogger
+
 
 
 ## Built With
