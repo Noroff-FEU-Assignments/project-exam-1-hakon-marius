@@ -3,7 +3,8 @@
 
 ![image](https://github.com/Noroff-FEU-Assignments/project-exam-1-hakon-marius/blob/main/images/samesize/homepage.jpg)
 
-This project demonstrates the practical application of my HTML and CSS skills. Its primary objective is to develop a functional and responsive webpage.
+This project is created with Wordpress as a headless content management system, creating an API.  
+One.Com is used as a hosting service for this project.
 
 ## Description
 
