@@ -26,6 +26,15 @@ The Blog page has ten blog posts and a button to view more posts.
 <b>Blog post specific pages</b>
 The blog-specific page dynamically generates its content based on a query string parameter, which is determined by the link the user clicks on. Additionally, there is a modal image feature that expands in size when clicked and hides when clicked again.
 
+<b>Contact page</b>
+The Contact page has a form with 4 input fields. The input text is validated using Javascript.
+
+•	Name (Should be more than 5 characters long)
+•	Email address (Must be a valid email address)
+•	Subject (Should be more than 15 characters long)
+•	Message content (Should be more than 25 characters long)
+
+
 
 ## Built With
 - HTML
