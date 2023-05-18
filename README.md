@@ -63,4 +63,4 @@ Email adress hakon.marius.solvang@gmail.com
 * [Free formatter.com](https://www.freeformatter.com/html-validator.html)
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Accesible WEB](https://accessibleweb.com/website-accessibility-checker/?page_url=https%3A%2F%2Fsnazzy-conkies-f91116.netlify.app%2F)
-
+* [one.com](https://www.one.com/en/)
