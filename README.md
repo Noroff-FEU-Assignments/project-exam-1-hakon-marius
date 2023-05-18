@@ -19,6 +19,7 @@ These requirements must be fulfilled
 ## Built With
 - HTML
 - CSS
+- Javascript
 
 ## Getting Started
 
