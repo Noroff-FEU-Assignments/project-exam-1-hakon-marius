@@ -18,10 +18,10 @@ Create a blog page with a topic of your choice, with least the following pages:
 -	Contact page
 
 <b>Homepage</b> 
-Should have a responsive "latest posts" slider that displays 4 images on full screens, 3 images on tablet size screens, and 1 image on small screens.  
+Has a responsive "latest posts" slider that displays 4 images on full screens, 3 images on tablet size screens, and 1 image on small screens.  
 
 <b>Blog page (List of blog posts)</b>
-Blog page has ten blog posts and a button to view more posts.
+The Blog page has ten blog posts and a button to view more posts.
 
 <b>Blog post specific pages</b>
 The blog-specific page dynamically generates its content based on a query string parameter, which is determined by the link the user clicks on. Additionally, there is a modal image feature that expands in size when clicked and hides when clicked again.
