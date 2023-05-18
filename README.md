@@ -1,4 +1,4 @@
-# Cross course project  
+# Project exam 1 
 Eboe graffiti chronicles blog
 
 ![image](https://github.com/Noroff-FEU-Assignments/project-exam-1-hakon-marius/blob/main/images/samesize/homepage.jpg)
