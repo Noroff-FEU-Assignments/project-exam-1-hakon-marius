@@ -9,12 +9,7 @@ This project demonstrates the practical application of my HTML and CSS skills. I
 
 These requirements must be fulfilled
 
-- The HTML should be semantic and neat
-- The CSS should follow the DRY principle and be easy to read
-- The website should be responsive and look good at every screen size with no horizontal scrollbars. Use Flexbox and CSS Grids where appropriate. No use of frameworks
-- The site should be WCAG compliant and accessibility taken into account
-- Each page should have a unique meta description, title, and h1
-- Do not use copied code in your submission. All code must be written by you. You can use external sources as references to learn how to achieve specific effects, but make sure to include them in your report
+
 
 ## Built With
 - HTML
