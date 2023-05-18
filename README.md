@@ -22,6 +22,7 @@ Create a blog page with a topic of your choice, with least the following pages:
 Should have a responsive "latest posts" slider that displays 4 images on full screens, 3 images on tablet size screens, and 1 image on small screens.  
 
 <b>Blog page (List of blog posts)</b>
+
 Blog page has ten blog posts and a button to view more posts.
 
 
