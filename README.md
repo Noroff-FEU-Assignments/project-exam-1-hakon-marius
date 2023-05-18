@@ -15,6 +15,7 @@ These requirements must be fulfilled
 - HTML
 - CSS
 - Javascript
+- Wordpress
 
 ## Getting Started
 
