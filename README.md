@@ -9,6 +9,12 @@ One.Com is used as a hosting service for this project.
 ## Description
 
 These requirements must be fulfilled
+Create a blog page with a topic of your choice, with least the following pages:
+-	Home page
+-	About Page
+-	List of blog posts
+-	Blog post specific pages
+-	Contact page
 
 
 
