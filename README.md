@@ -34,6 +34,7 @@ The Contact page has a form with 4 input fields. The input text is validated usi
 •	Subject (more than 15 characters long)  
 •	Message content (more than 25 characters long)
 
+<b>About page</b>
 
 
 ## Built With
