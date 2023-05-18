@@ -1,7 +1,7 @@
 # Cross course project  
 <b>GameHUB, The universe of games!</b>
 
-![image](https://github.com/Noroff-FEU-Assignments/cross-course-project-hakon-marius/blob/main/Images/world-collapse-doomsday-scene-digital-painting.png)
+![image](https://github.com/Noroff-FEU-Assignments/project-exam-1-hakon-marius/blob/main/images/samesize/homepage.jpg)
 
 This project demonstrates the practical application of my HTML and CSS skills. Its primary objective is to develop a functional and responsive webpage.
 
