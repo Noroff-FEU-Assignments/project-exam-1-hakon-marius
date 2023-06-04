@@ -4,7 +4,7 @@
 ![image](https://github.com/Noroff-FEU-Assignments/project-exam-1-hakon-marius/blob/main/images/samesize/homepage.jpg)
 
 This project is created with Wordpress as a headless content management system, creating an API.  
-One.Com is used as a hosting service for this project.
+One.Com is used as a hosting service for this project. Project delivered 14 May 2023
 
 ## Description
 
