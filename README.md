@@ -47,7 +47,7 @@ The Contact page has a form with 4 input fields. The input text is validated usi
 
 ## Getting Started
 
-Visit the page https://eclectic-axolotl-e8bfd9.netlify.app/
+Visit the page https://creative-basbousa-714b39.netlify.app/
 
 ## Contact
 Feel free to reach out using the following contact information:  
